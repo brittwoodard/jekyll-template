@@ -20,11 +20,6 @@ social:
   tiktok_username:
   youtube_username:
 brand:
-  # Put colors in ''
-  main_color: 
-  feature_color: 
-  light_color: 
-  dark_color: 
   primary_logo_path: 
   secondary_logo_path:
   submark_logo_path:

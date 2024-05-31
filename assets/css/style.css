@@ -326,33 +326,16 @@ video {
 [hidden] {
   display: none;
 }
-h1, h2, h3, h4 {
-  margin-bottom: 0.5em;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #;
   font-family: Montserrat, sans-serif;
-}
-h1 {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  line-height: 1.25;
-}
-h2 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  line-height: 1.25;
-}
-h3 {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  line-height: 1.25;
-}
-h4 {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  line-height: 1.25;
-}
-p {
-  margin-bottom: 0.5em;
-  line-height: 1.5;
+  font-weight: 300;
+  color: #;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -460,6 +443,16 @@ p {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+/* Images */
+/* Forms */
+.focus-main:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-color: #;
+}
 .fixed {
   position: fixed;
 }
@@ -497,17 +490,23 @@ p {
 .flex {
   display: flex;
 }
-.grid {
-  display: grid;
-}
 .hidden {
   display: none;
 }
 .h-screen {
   height: 100vh;
 }
+.w-full {
+  width: 100%;
+}
+.flex-grow {
+  flex-grow: 1;
+}
 .cursor-pointer {
   cursor: pointer;
+}
+.flex-wrap {
+  flex-wrap: wrap;
 }
 .items-center {
   align-items: center;
@@ -521,11 +520,17 @@ p {
 .justify-items-center {
   justify-items: center;
 }
-.gap-8 {
-  gap: 2rem;
+.gap-4 {
+  gap: 1rem;
 }
 .border {
   border-width: 1px;
+}
+.border-dark {
+  border-color: #;
+}
+.bg-light {
+  background-color: #;
 }
 .bg-yellow-400 {
   --tw-bg-opacity: 1;
@@ -557,12 +562,6 @@ p {
 
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
-
-@media (min-width: 640px) {
-  .sm\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
 
 @media (min-width: 768px) {
   .md\:w-\[40\%\] {

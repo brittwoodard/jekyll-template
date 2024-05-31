@@ -460,29 +460,6 @@ p {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
-.tag {
-  display: inline-block;
-  padding: 0.25rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
-  --tw-text-opacity: 1;
-  color: rgb(87 83 78 / var(--tw-text-opacity));
-}
-.button {
-  display: inline-block;
-  --tw-bg-opacity: 1;
-  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
 .fixed {
   position: fixed;
 }
@@ -502,14 +479,11 @@ p {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
 .mb-8 {
   margin-bottom: 2rem;
-}
-.ml-2 {
-  margin-left: 0.5rem;
-}
-.mr-2 {
-  margin-right: 0.5rem;
 }
 .ml-4 {
   margin-left: 1rem;
@@ -523,14 +497,14 @@ p {
 .flex {
   display: flex;
 }
+.grid {
+  display: grid;
+}
 .hidden {
   display: none;
 }
 .h-screen {
   height: 100vh;
-}
-.w-\[65vw\] {
-  width: 65vw;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -546,6 +520,9 @@ p {
 }
 .justify-items-center {
   justify-items: center;
+}
+.gap-8 {
+  gap: 2rem;
 }
 .border {
   border-width: 1px;
@@ -581,10 +558,13 @@ p {
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
-@media (min-width: 768px) {
-  .md\:hidden {
-    display: none;
+@media (min-width: 640px) {
+  .sm\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+}
+
+@media (min-width: 768px) {
   .md\:w-\[40\%\] {
     width: 40%;
   }

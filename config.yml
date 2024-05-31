@@ -3,4 +3,4 @@ collections:
     output: true
 
 # Enable LiveReload
-livereload: truen
+livereload: true
